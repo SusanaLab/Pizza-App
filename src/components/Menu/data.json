@@ -1,0 +1,88 @@
+{"pizza": [
+    {
+    "name": "Mexicana",
+    "description": "Metro City",
+    "price": 110
+  },
+  {
+    "name": "Hawaiana",
+    "description": "Metro City",
+    "price": 110
+  },
+  {
+    "name": "Campesina",
+    "description": "Metro City",
+    "price": 110
+  },
+  {
+    "name": "3 Quesos",
+    "description": "Metro City",
+    "price": 110
+  },
+  {
+    "name": "Peperoni",
+    "description": "Metro City",
+    "price": 110
+  },
+  {
+    "name": "Atun",
+    "description": "Metro City",
+    "price": 110
+  },
+  {
+    "name": "Barro Rojo",
+    "description": "Metro City",
+    "price": 110
+  },
+  {
+    "name": "Jamon",
+    "description": "Jamon",
+    "price": 110
+  },
+  {
+    "name": "Italiana",
+    "description": "Italiana",
+    "price": 110
+  },
+  {
+    "name": "Al pastor",
+    "description": "Al pastor",
+    "price": 110
+  },
+  {
+    "name": "Pollo",
+    "description": "Metro City",
+    "price": 110
+  },
+  {
+    "name": "Bicentenario",
+    "description": "Metro City",
+    "price": 110
+  },
+  {
+    "name": "Champiñones con Jamon",
+    "description": "Metro City",
+    "price": 110
+  },
+  {
+    "name": "Champiñones con chorizo",
+    "description": "Metro City",
+    "price": 110
+  },
+  {
+    "name": "Champiñones",
+    "description": "Metro City",
+    "price": 110
+  },
+  {
+    "name": "Minera",
+    "description": "Metro City",
+    "price": 110
+  },
+  {
+    "name": "Vegetales",
+    "description": "Metro City",
+    "price": 110
+  }
+  ]
+}

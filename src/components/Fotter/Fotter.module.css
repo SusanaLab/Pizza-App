@@ -1,0 +1,19 @@
+.footer{
+    color: rgb(255, 255, 255);
+    display: flex; 
+    background-color:var(--background-dark-color);
+    flex-direction: column;
+    justify-content: center;
+     align-items:center;
+}
+.pic{ 
+    display: flex;
+    align-items: center;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+    display: flex;
+  
+}
