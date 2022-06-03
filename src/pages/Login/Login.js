@@ -3,13 +3,15 @@ import { useState } from 'react';
 import styles from './Login.module.css'
 import pi  from './pi.jpg'
 import firebase from 'firebase';
-//import { useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 
 const Login = () => {
     const [correo, setCorreo] = useState('');
     const [contraseña, setContraseña] = useState('');
-    //const [userId, setUserId] = useState('');
+    const [userId, setUserId] = useState('');
     
+    const navigate = useNavigate();
+
     const handleInputCorreo= e =>  {
       e.preventDefault();
       const {value} = e.target;
@@ -24,14 +26,15 @@ const Login = () => {
     }
 console.log(correo)
 console.log(contraseña)
+
     const SingIn = (e) =>  {
       e.preventDefault();
       firebase.auth().signInWithEmailAndPassword(correo, contraseña)
       .then((userCredential) => {
         console.log ("Signed in");
-       /*  let user = userCredential.user;
-        setUserId(user) */
-        //navigate("/mesera"); 
+        var user = userCredential.user;
+        setUserId(user)
+        navigate("/mesera"); 
       })
       .catch((error) => {
         let errorCode = error.code;
@@ -46,7 +49,7 @@ console.log(contraseña)
       <h1 className={styles.sing}>Bienvenido  </h1>
       <form className={styles.formRegistro}>
       <h2 className={styles.text}>Usuario</h2>
-      <input  className={styles.inputL}value= {correo} onChange={handleInputCorreo}  type="text" placeholder="example@gmail.com"/>
+      <input  className={styles.inputL} value= {correo}  onChange={handleInputCorreo}  type="text" placeholder="example@gmail.com"/>
       <h2 className={styles.text} >Contraseña</h2>
       <input className={styles.inputL} type="password" name="password" value= {contraseña}  onChange={handleInputContraseña} placeholder="**********"/>
       </form>

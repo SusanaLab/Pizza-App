@@ -1,8 +1,14 @@
 import React from 'react'
 import styles from './Nav.css'
+import { useNavigate } from "react-router-dom";
 
+const Navbar = ({onPress}) => {
+const navigate = useNavigate();
+  const SingIn = (e) =>  {
+    e.preventDefault();
+      navigate("/login"); 
+    }
 
-const Navbar = () => {
   return (
 <>
 <div className="blog-post-navbar">
@@ -21,7 +27,7 @@ const Navbar = () => {
         <li><a href="#">Menu</a></li>
         <li><a href="#">Horarios</a></li>
         <li><a href="#">Bebidas</a></li>
-        <li><button className='inicio'> Iniciar sesion </button></li>
+        <li><button  onClick={SingIn}className='inicio'> Iniciar sesion </button></li>
       </ul>
     </div>
 </>

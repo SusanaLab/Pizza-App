@@ -1,0 +1,29 @@
+.btnPizza{
+    width: 115.88px;
+    height: 89.99px;
+    background: #F47B23;
+    border: 3px solid #FF6B00;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 31px;
+    color: #FFFBFB;
+
+
+}
+.btnImage{
+    width: 41.22px;
+    height: 39.21px; 
+}
+.titulo{
+    margin: 0px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-size: 64px;
+    line-height: 85px;
+    background-color: var( --background-dark-color);
+    color: #FFFFFF;
+}
