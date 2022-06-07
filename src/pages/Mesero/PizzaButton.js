@@ -1,16 +1,17 @@
 import React from 'react'
-import pizza  from './pizza.png'
+import icono  from './pizza.png'
 import styles from './Mesero.module.css'
-import data from '../../Data/data';
 
 
 
-const PizzaButton = ({name}) => {
+
+const PizzaButton = ({pizza}) => {
+  console.log(pizza)
 return (   
-    <div>
+    <div >
     <button className={styles.btnPizza}>
-    <img className={styles.btnImage}  src={pizza} alt="img" />  
-     {pizza.name}  pollo </button>
+    <img className={styles.btnImage}  src={icono} alt="img" />  
+     {pizza} </button>
        
     </div>
   )

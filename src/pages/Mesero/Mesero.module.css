@@ -1,8 +1,12 @@
+.orden{
+    display: flex;
+    flex-direction: row;
+}
 .btnPizza{
     width: 115.88px;
     height: 89.99px;
     background: #F47B23;
-    border: 3px solid #FF6B00;
+    border: 3px solid #F47B23;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 24px;
     font-family: 'Montserrat', sans-serif;
@@ -11,7 +15,7 @@
     font-size: 20px;
     line-height: 31px;
     color: #FFFBFB;
-
+    margin: 10px;
 
 }
 .btnImage{
@@ -26,4 +30,36 @@
     line-height: 85px;
     background-color: var( --background-dark-color);
     color: #FFFFFF;
+}
+.flavor{
+    display: flex;
+    flex-wrap: wrap;
+   align-content: space-around;
+    border-color: black;
+    background-color: black;
+   }
+
+.ticket{ 
+    border-color: black;
+    background-color: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+}
+.textEnter{
+border-color: #F47B23;
+}
+.tableTicket{
+    display: flex;
+    flex-direction: column;
+    border-color: #F47B23;
+}
+.infoTicket{
+    display: flex;
+    flex-direction: row;
+}
+.sendKitchen{display: flex;
+flex-direction: column;
+}
+.flavorDiv{
+  background-color: palevioletred;
 }
