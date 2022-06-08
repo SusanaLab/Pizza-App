@@ -5,17 +5,18 @@ import { useState, useReducer } from 'react'
 
 
 
-const PizzaButton = ({pizza, id, price, precio, nombre, setPrecio, setNombre}) => {
+const PizzaButton = ({pizza, id, price, precio, nombre, setPrecio, setNombre, handleClick}) => {
 
 
-  const handleSend = e =>  {
-    e.preventDefault();
-    setPrecio(price)
-    setNombre(pizza)
-   console.log("numero" + id + pizza + price)  
-   //console.log(precio, nombre, contador);
-  };
-  //console.log(precio, nombre, contador);
+const handleSend = e =>  {
+  handleClick(pizza)
+  e.preventDefault();
+  setPrecio(price)
+  setNombre(pizza)
+ console.log("numero" + id + pizza + price)  
+ console.log(pizza)
+ //console.log(precio, nombre, contador);
+};
 
 return (   
     <div >

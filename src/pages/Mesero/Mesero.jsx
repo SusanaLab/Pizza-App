@@ -4,20 +4,39 @@ import styles from './Mesero.module.css'
 import data from '../../Data/data'
 import { useState, useReducer } from 'react'
 
-const pizzas = data.pizza;
+//const pizzas = data.pizza;
 //console.log(pizzas)
 
-
+const initialState ={
+  productos: []
+ }
+ const productoReducer = (state, action )=>{
+   switch(action.type){
+     case'ADD_PRODUCT':
+      return {
+        ...state,
+         productos: [...state.productos, action.payload]
+      }
+      default:
+        return state;
+   }
+  }
 
 const Mesero = () => {
+  const [pizzas, setPizzas] = useState([ data.pizza]);
   const [cliente, setCliente] = useState('');
   const [especific, setEspecific] = useState('');
+  const [contador, setContador] = useState(0);
+  const [productos, dispatch] = useReducer(productoReducer, initialState);
   const [precio, setPrecio] = useState('');
   const [nombre, setNombre] = useState('');
- const [contador, setContador] = useState(0);
- 
 
   console.log(precio, nombre, contador);
+
+ const handleClick = producto => {
+  dispatch({type:'ADD_PRODUCT', payload: producto})
+}
+
   const handleInputCorreo= e =>  {
     e.preventDefault();
     const {value} = e.target;
@@ -53,6 +72,7 @@ const Mesero = () => {
               id={pizza.id} 
               price = {pizza.price} 
               pizza = {pizza.name}
+              handleClick = {handleClick(pizza)}
               precio = {precio} 
               nombre = {nombre}
               setPrecio = {setPrecio} 
@@ -82,18 +102,19 @@ const Mesero = () => {
           </tr>
         </thead>
         <tbody> 
-        
-             <tr  >
+        {productos.productos.map( producto => (
+          <li>
+             <tr >
          
-                <td className={styles.linea}>{nombre}  </td>
+                <td className={styles.linea}>{producto.name}  </td>
                 <td> {contador}pz</td>
-                <td> ${precio}</td>
+                <td> ${producto.precio}</td>
                 <td><button onClick={increase} > + </button></td>
                 <td><button onClick={decrease} > - </button></td>
                 <td><button  > Borrar </button></td>
               </tr>
-  
-             
+         </li>
+        ))}
              
         </tbody>
       </table>
