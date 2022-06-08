@@ -70,7 +70,7 @@ export default {
   {
     "name": "Bicentenario",
     "description": "Metro City",
-    "price": 110,
+    "price": 130,
     "id": 12
   },
   {

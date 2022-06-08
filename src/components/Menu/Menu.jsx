@@ -4,7 +4,7 @@ import data from '../../Data/data';
 import styles from './Menu.module.css'
 
 const pizzas = data.pizza;
-console.log(pizzas)
+//console.log(pizzas)
 
 const Menu = (props) => {
 

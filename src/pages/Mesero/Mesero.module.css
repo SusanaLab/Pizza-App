@@ -11,9 +11,8 @@
     border-radius: 24px;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 31px;
+    font-weight: 200;
+    font-size: 14px;
     color: #FFFBFB;
     margin: 10px;
 
@@ -36,30 +35,46 @@
     flex-wrap: wrap;
    align-content: space-around;
     border-color: black;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
    }
 
 .ticket{ 
     border-color: black;
-    background-color: rebeccapurple;
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
+    margin: 10px;
 }
 .textEnter{
 border-color: #F47B23;
+width: 300px;
+margin: 10px;
 }
 .tableTicket{
     display: flex;
     flex-direction: column;
     border-color: #F47B23;
+    margin: 10px;
 }
 .infoTicket{
     display: flex;
     flex-direction: row;
+
 }
-.sendKitchen{display: flex;
+.sendKitchen
+{display: flex;
 flex-direction: column;
 }
 .flavorDiv{
-  background-color: palevioletred;
+  background-color: rgb(255, 255, 255);
+}
+.btnSend{
+font-style: normal;
+font-weight: 100;
+font-size: 20px;
+line-height: 25px;
+background: #2D2C2C;
+border-radius: 9px;
+border: 0pt;
+color: #ffffff;
 }
