@@ -4,7 +4,7 @@ import styles from './Mesero.module.css'
 import data from '../../Data/data'
 import { useState, useReducer } from 'react'
 
-//const pizzas = data.pizza;
+const pizzas = data.pizza;
 //console.log(pizzas)
 
 const initialState ={
@@ -23,7 +23,7 @@ const initialState ={
   }
 
 const Mesero = () => {
-  const [pizzas, setPizzas] = useState([ data.pizza]);
+  
   const [cliente, setCliente] = useState('');
   const [especific, setEspecific] = useState('');
   const [contador, setContador] = useState(0);
@@ -72,11 +72,12 @@ const Mesero = () => {
               id={pizza.id} 
               price = {pizza.price} 
               pizza = {pizza.name}
-              handleClick = {handleClick(pizza)}
+              handleClick = {handleClick}
               precio = {precio} 
               nombre = {nombre}
               setPrecio = {setPrecio} 
               setNombre = {setNombre}
+             
               />
               )})}
               
@@ -104,9 +105,9 @@ const Mesero = () => {
         <tbody> 
         {productos.productos.map( producto => (
           <li>
-             <tr >
+             <tr  >
          
-                <td className={styles.linea}>{producto.name}  </td>
+                <td className={styles.linea}>{producto.nombre}  </td>
                 <td> {contador}pz</td>
                 <td> ${producto.precio}</td>
                 <td><button onClick={increase} > + </button></td>

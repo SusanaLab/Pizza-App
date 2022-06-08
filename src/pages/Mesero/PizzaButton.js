@@ -1,22 +1,23 @@
 import React from 'react'
 import icono  from './pizza.png'
 import styles from './Mesero.module.css'
-import { useState, useReducer } from 'react'
+import { useState } from 'react'
 
 
 
-const PizzaButton = ({pizza, id, price, precio, nombre, setPrecio, setNombre, handleClick}) => {
+const PizzaButton = ({pizza, id, price, precio, nombre, setPrecio, setNombre, setContador, handleClick}) => {
 
 
-const handleSend = e =>  {
-  handleClick(pizza)
-  e.preventDefault();
-  setPrecio(price)
-  setNombre(pizza)
- console.log("numero" + id + pizza + price)  
- console.log(pizza)
- //console.log(precio, nombre, contador);
-};
+
+  const handleSend = e =>  {
+    e.preventDefault();
+    setPrecio(price)
+    setNombre(pizza)
+    handleClick(nombre)
+   //console.log("numero" + id + pizza + price)  
+   //console.log(precio, nombre, contador);
+  };
+  //console.log(precio, nombre, contador);
 
 return (   
     <div >
