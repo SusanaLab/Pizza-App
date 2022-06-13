@@ -3,6 +3,7 @@ import PizzaButton from './PizzaButton'
 import styles from './Mesero.module.css'
 import data from '../../Data/data'
 import { useState, useReducer } from 'react'
+import Fotter from '../../components/Fotter/Fotter'
 
 const pizzas = data.pizza;
 //console.log(pizzas)
@@ -105,15 +106,9 @@ const Mesero = () => {
         <tbody> 
         {productos.productos.map( producto => (
           <li>
-             <tr  >
-         
-                <td className={styles.linea}>{producto.nombre}  </td>
-                <td> {contador}pz</td>
-                <td> ${producto.precio}</td>
-                <td><button onClick={increase} > + </button></td>
-                <td><button onClick={decrease} > - </button></td>
-                <td><button  > Borrar </button></td>
-              </tr>
+            
+         {producto.name} 
+              
          </li>
         ))}
              
@@ -130,6 +125,7 @@ const Mesero = () => {
       </div>
     </div>
     </div>
+  <Fotter/>
     </>
   )
 }

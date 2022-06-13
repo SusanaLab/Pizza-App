@@ -1,0 +1,34 @@
+
+.er{
+text-align: center;
+margin: 0 auto;
+}
+.error4{
+    font-family: 'Trocchi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 128px;
+    color: #FF6B00;
+    margin: 10px;
+}
+.page{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    color: #000000;
+    margin: 10px;
+}
+.des{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    color: #000000;
+    margin: 10px;
+}
+.imgP{
+    width: 390px;
+    height: 390px;
+    margin: 10px;
+}

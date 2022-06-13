@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Nav.css'
 import { useNavigate } from "react-router-dom";
+import entrega  from './entrega.png'
 
 const Navbar = ({onPress}) => {
 const navigate = useNavigate();
@@ -14,11 +15,12 @@ const navigate = useNavigate();
 <div className="blog-post-navbar">
       <div className="blog-post-brand">
         <a>
-          <img
-            src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.directoalpaladar.com%2Fcultura-gastronomica%2Fque-se-diferencian-ocho-tipos-pizza-comunes-napolitana-a-pinsa-pasando-nueva-york&psig=AOvVaw0lEPQEYbCIYQ8kR-YoA_k5&ust=1654206666707000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCPiQ-ZmejfgCFQAAAAAdAAAAABAD"
+          <img  
+            src={entrega}
             alt="logo"
-            width={80}
-            height={80}
+            width={50}
+            height={50}
+            margin={10}
           />
         </a>
       </div>

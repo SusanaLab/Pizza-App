@@ -13,9 +13,9 @@ const PizzaButton = ({pizza, id, price, precio, nombre, setPrecio, setNombre, se
     e.preventDefault();
     setPrecio(price)
     setNombre(pizza)
-    handleClick(nombre)
+    handleClick(pizza)
    //console.log("numero" + id + pizza + price)  
-   //console.log(precio, nombre, contador);
+   console.log(precio, nombre);
   };
   //console.log(precio, nombre, contador);
 
